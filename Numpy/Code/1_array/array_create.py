@@ -14,7 +14,7 @@ import numpy as np
 
 # 创建单位数组
 # x = np.ones(10,dtype=np.float32)
-x = np.eye(3)
+# x = np.eye(3)
 
 # 创建同值数组
 # x = np.full((3,5),3.14)
@@ -45,4 +45,32 @@ x = np.eye(3)
 """
 # y = x[1, 1]
 # y = x[:2,:2]    # 获取2行2列
-# print(y)
+
+"""
+    数组的变形
+"""
+# x = np.arange(1,10).reshape((3,3))
+# 使用newaxis
+# x = np.array([1,2,3,4,5])
+# x[np.newaxis,:]
+# y = x[:,np.newaxis]
+
+"""
+    数组的拼接
+"""
+# x1 = np.array([1,2,3,4,5])
+# x2 = np.array([5,4,3,2,1])
+# x = np.concatenate([x1,x2])
+# x = np.concatenate([x1,x2],axis=1) # 特性：不能跨维度拼接
+
+# x1 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+# x2 = np.array([[11,12,13,14,15],[21,22,23,24,25]])
+# x = np.concatenate([x1,x2],axis=1)
+
+## 栈函数
+x1 = np.array([1,2,3])
+x2 = np.array([4,5,6])
+# x = np.vstack([x1,x2])    # 垂直栈函数
+x = np.hstack([x1,x2])      # 水平栈函数
+
+print(x)
