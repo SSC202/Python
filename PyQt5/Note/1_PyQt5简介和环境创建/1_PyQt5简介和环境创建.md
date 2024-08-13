@@ -54,3 +54,24 @@ sys.exit(app.exec())
 ```
 
 ![NULL](./assets/picture_2.jpg)
+
+## 3. PyQt5 常用组件
+
+| 组件 | 用途 |
+| ---- | ---- |
+|  `QtCore`  |  其他模块使用的核心非 GUI 类    |
+|  `QtGui`  |   图形用户界面组件   |
+|   `QtMultimedia`   |  低级多媒体编程类    |
+|  `QtNetwork`  |  网络编程类  |
+|   `QtOpenGL`   |  OpenGL 支持类    |
+|  `QtScript`  | 评估 Qt 脚本的类   |
+|  `QtSql`  |  使用 SQL 进行数据库集成的类   |
+| `QtSvg` |  显示 SVG 文件内容的类   |
+|  `QtXml`  |  处理 XML 的类   |
+|  `QtWidgets`  |  创建经典桌面风格 UI 的类   |
+|  `QtDesigner`  |  扩展 Qt Designer 的类   |
+
+
+
+
+
